@@ -45,31 +45,20 @@
     self.friendScore.Name = self.nameText.text;
     self.friendScore.MaxMark = [self _dealData:self.markField.text].integerValue;
     self.friendScore.TotalScore = [self _dealData:self.totleScoreField.text].integerValue;
-    self.friendScore.Point = [self _dealData:self.pointField.text].doubleValue;
+    self.friendScore.Point = (float) [self _dealData:self.pointField.text].doubleValue;
     if (self.isAdd)
     {
         if ([gHappyDAO addFriend:self.friendScore])
         {
-            NSLog(@"==addFriend==OK");
             [self dismissViewControllerAnimated:YES completion:nil];
-        }
-        else
-        {
-            NSLog(@"==addFriend==error");
         }
     }
     else
     {
         if ([gHappyDAO updateFriend:self.friendScore])
         {
-            NSLog(@"==updateFriend==OK");
             [self dismissViewControllerAnimated:YES completion:nil];
         }
-        else
-        {
-            NSLog(@"==updateFriend==error");
-        }
-
     }
 }
 

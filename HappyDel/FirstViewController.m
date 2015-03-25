@@ -7,7 +7,6 @@
 //
 
 #import "FirstViewController.h"
-#import "DetailCell.h"
 #import "HappyDetail.h"
 #import "AddViewController.h"
 #import "HappyDAO.h"

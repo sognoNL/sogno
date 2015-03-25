@@ -13,8 +13,7 @@
     UILabel *vSepLabel1;
     UILabel *vSepLabel2;
 }
-//@property (strong, nonatomic) UILabel *vSepLabel1;
-//@property (strong, nonatomic) UILabel *vSepLabel2;
+
 @end
 @implementation DetailCell
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

@@ -59,25 +59,14 @@
     {
         if ([gHappyDAO addRecord:self.happyDetail])
         {
-            NSLog(@"==addRecord==OK");
             [self dismissViewControllerAnimated:YES completion:nil];
         }
-        else
-        {
-            NSLog(@"==addRecord==error");
-        }
-
     }
     else
     {
         if ([gHappyDAO updateRecord:self.happyDetail])
         {
-            NSLog(@"==updateRecord==OK");
             [self dismissViewControllerAnimated:YES completion:nil];
-        }
-        else
-        {
-            NSLog(@"==updateRecord==error");
         }
     }
 }

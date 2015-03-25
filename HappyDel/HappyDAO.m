@@ -38,7 +38,7 @@ static HappyDAO *sharedDAO = nil;
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *dbFilePath = [NSString stringWithFormat:@"%@/%@",[NSString stringWithFormat:@"%@",paths[0]],kDBFile];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:dbFilePath] == NO)
+    if (![[NSFileManager defaultManager] fileExistsAtPath:dbFilePath])
     {
         BOOL success;
         NSError *error;
@@ -67,17 +67,6 @@ static HappyDAO *sharedDAO = nil;
     return YES;
 }
 
-- (void)closeDatabase
-{
-    [self.dbQueue inDatabase:^(FMDatabase *db)
-     {
-         [db closeOpenResultSets];
-         [db clearCachedStatements];
-         [db close];
-     }];
-    [self.dbQueue close];
-}
-
 - (BOOL)addRecord:(HappyDetail *)detail
 {
     __block BOOL success = YES;
@@ -102,7 +91,6 @@ static HappyDAO *sharedDAO = nil;
     __block BOOL success = YES;
     [self.dbQueue inTransaction:^(FMDatabase *db, BOOL *rollback)
      {
-         BOOL success = YES;
          [db executeUpdate:@"UPDATE happydel SET curScore = ?,curRank = ?,bestScore = ?,bestRank = ?, "\
           "iscompleted = ?,threestar = ? WHERE recordId = ?", detail.curScore,@(detail.curRank),detail.bestScore,
           @(detail.bestRank),@(detail.isCompleted),detail.threeStar,@(detail.recordId)];
@@ -241,7 +229,6 @@ static HappyDAO *sharedDAO = nil;
     __block BOOL success = YES;
     [self.dbQueue inTransaction:^(FMDatabase *db, BOOL *rollback)
      {
-         BOOL success = YES;
          [db executeUpdate:@"UPDATE friendscroe SET maxmark = ?,totalscore = ?,point = ? WHERE name = ?",
           @(fs.MaxMark),@(fs.TotalScore),@(fs.Point),fs.Name];
          if ([db hadError])
@@ -260,7 +247,7 @@ static HappyDAO *sharedDAO = nil;
     fs.Name = [rs stringForColumn:@"name"];
     fs.MaxMark = [rs intForColumn:@"maxmark"];
     fs.TotalScore = [rs intForColumn:@"totalscore"];
-    fs.Point = [rs doubleForColumn:@"point"];
+    fs.Point = (float) [rs doubleForColumn:@"point"];
     return fs;
 }
 
@@ -320,28 +307,11 @@ static HappyDAO *sharedDAO = nil;
      }];
 }
 
-- (FourStar *)getFourStarByRecoard:(NSString *)rid
-{
-    __block FourStar *foustar = nil;
-    [self.dbQueue inDatabase:^(FMDatabase *db)
-     {
-         FMResultSet *rs = [db executeQuery:@"SELECT * FROM fourstar where recordid = ?",rid];
-         if ([rs next])
-         {
-             foustar = [self _rsToFourStar:rs];
-         }
-         
-         [rs close];
-     }];
-    return foustar;
-}
-
 - (BOOL)updateFourstar:(FourStar *)fs
 {
     __block BOOL success = YES;
     [self.dbQueue inTransaction:^(FMDatabase *db, BOOL *rollback)
      {
-         BOOL success = YES;
          [db executeUpdate:@"UPDATE fourstar SET myscore = ?,iscomplete = ? WHERE recordid = ?",
           @(fs.myScore),@(fs.isCompleted),@(fs.recordId)];
          if ([db hadError])

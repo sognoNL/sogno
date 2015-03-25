@@ -10,7 +10,6 @@
 #import "DetailCell.h"
 #import "HappyDAO.h"
 #import "Constants.h"
-#import "FriendScore.h"
 #import "AddFriendViewController.h"
 
 @interface ThirdViewController ()

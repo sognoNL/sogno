@@ -7,9 +7,6 @@
 //
 
 #import "DetailCell1.h"
-#import "FourStar.h"
-#import "HappyDAO.h"
-#import "Constants.h"
 
 @interface DetailCell1 ()
 @end

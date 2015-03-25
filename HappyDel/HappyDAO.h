@@ -18,7 +18,6 @@
 
 + (HappyDAO *)sharedDAO;
 - (BOOL)initDatabase;
-- (void)closeDatabase;
 //未达三星的关卡及分数
 - (BOOL)addRecord:(HappyDetail *)detail;
 
@@ -41,6 +40,5 @@
 //四星关卡分数，及我的分数
 
 - (void)getAllFourStar:(void(^)(NSMutableArray *records))finish;
-- (FourStar *)getFourStarByRecoard:(NSString *)rid;
 - (BOOL)updateFourstar:(FourStar *)fs;
 @end

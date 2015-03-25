@@ -37,12 +37,7 @@
     }
     if ([gHappyDAO updateFourstar:self.fourstar])
     {
-        NSLog(@"==updateRecord==OK");
         [self dismissViewControllerAnimated:YES completion:nil];
-    }
-    else
-    {
-        NSLog(@"==updateRecord==error");
     }
 }
 
