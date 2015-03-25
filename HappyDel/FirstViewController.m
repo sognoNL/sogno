@@ -36,7 +36,7 @@
     [super viewWillAppear:animated];
     [self.recordAry removeAllObjects];
     __block FirstViewController *weakself = self;
-    [gHappyDAO getRecordByRand:^(NSMutableArray *records)
+    [gHappyDAO getRecordByRecordId:^(NSMutableArray *records)
     {
         weakself.recordAry = records;
         [weakself.tableview reloadData];

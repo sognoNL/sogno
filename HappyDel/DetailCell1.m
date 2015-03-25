@@ -41,8 +41,6 @@
         _threeScoreLabel.backgroundColor = [UIColor clearColor];
         _threeScoreLabel.font = [UIFont systemFontOfSize:12];
         _threeScoreLabel.textColor = [UIColor lightGrayColor];
-//        _threeScoreLabel.textAlignment = NSTextAlignmentRight;
-        
         [self.contentView addSubview:_recordLabel];
         [self.contentView addSubview:_myScoreLabel];
         [self.contentView addSubview:_bestScoreLabel];
