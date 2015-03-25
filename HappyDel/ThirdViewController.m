@@ -65,7 +65,7 @@
     FriendScore *fs = self.recordAry[indexPath.row];
     cell.recordLabel.text = fs.Name;
     cell.recordLabel.font = [UIFont boldSystemFontOfSize:16];
-    cell.myScoreLabel.text = [NSString stringWithFormat:@"    %ld_%ld",fs.MaxMark,fs.TotalScore];
+    cell.myScoreLabel.text = [NSString stringWithFormat:@"    %ld_%ld",(long)fs.MaxMark,(long)fs.TotalScore];
     cell.bestScoreLabel.text = [NSString stringWithFormat:@"%f",(float)fs.TotalScore/(float)(fs.MaxMark-1)];
     return cell;
 }

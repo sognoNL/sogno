@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.OldScoreField.text = [NSString stringWithFormat:@"%ld",self.fourstar.myScore];
+    self.OldScoreField.text = [NSString stringWithFormat:@"%ld",(long)self.fourstar.myScore];
 }
 
 - (IBAction)savePressed:(id)sender

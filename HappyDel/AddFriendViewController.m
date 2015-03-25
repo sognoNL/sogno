@@ -33,8 +33,8 @@
     else
     {
         self.nameText.text = self.friendScore.Name;
-        self.markField.text = [NSString stringWithFormat:@"%ld",self.friendScore.MaxMark];
-        self.totleScoreField.text = [NSString stringWithFormat:@"%ld",self.friendScore.TotalScore];
+        self.markField.text = [NSString stringWithFormat:@"%ld",(long)self.friendScore.MaxMark];
+        self.totleScoreField.text = [NSString stringWithFormat:@"%ld",(long)self.friendScore.TotalScore];
         self.pointField.text = [NSString stringWithFormat:@"%f",(float)self.friendScore.TotalScore/(float)(self.friendScore.MaxMark-1)];
     }
 }
