@@ -15,6 +15,7 @@
 
 @interface ThirdViewController ()
 @property (nonatomic,strong) NSMutableArray *recordAry;
+@property (strong, nonatomic) IBOutlet UITabBarItem *thirdItem;
 @end
 
 @implementation ThirdViewController
@@ -22,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.thirdItem setFinishedSelectedImage:[UIImage imageNamed:@"thirdPress.png"]
+                 withFinishedUnselectedImage:[UIImage imageNamed:@""]];
     self.recordAry = [[NSMutableArray alloc] init];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;

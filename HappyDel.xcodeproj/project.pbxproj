@@ -12,6 +12,18 @@
 		E63A875B1AC3D66800BC0422 /* AvatarImg.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875A1AC3D66800BC0422 /* AvatarImg.m */; };
 		E63A87601AC3DC7A00BC0422 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875E1AC3DC7A00BC0422 /* FriendCell.m */; };
 		E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */; };
+		E65527351AC3F1BC000AA3BF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E655272F1AC3F1BC000AA3BF /* 1.png */; };
+		E65527361AC3F1BC000AA3BF /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527301AC3F1BC000AA3BF /* 1@2x.png */; };
+		E65527371AC3F1BC000AA3BF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527311AC3F1BC000AA3BF /* 2.png */; };
+		E65527381AC3F1BC000AA3BF /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527321AC3F1BC000AA3BF /* 2@2x.png */; };
+		E65527391AC3F1BC000AA3BF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527331AC3F1BC000AA3BF /* 3.png */; };
+		E655273A1AC3F1BC000AA3BF /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527341AC3F1BC000AA3BF /* 3@2x.png */; };
+		E65527411AC3F2AE000AA3BF /* firstPress.png in Resources */ = {isa = PBXBuildFile; fileRef = E655273B1AC3F2AE000AA3BF /* firstPress.png */; };
+		E65527421AC3F2AE000AA3BF /* firstPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E655273C1AC3F2AE000AA3BF /* firstPress@2x.png */; };
+		E65527431AC3F2AE000AA3BF /* secondPress.png in Resources */ = {isa = PBXBuildFile; fileRef = E655273D1AC3F2AE000AA3BF /* secondPress.png */; };
+		E65527441AC3F2AE000AA3BF /* secondPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E655273E1AC3F2AE000AA3BF /* secondPress@2x.png */; };
+		E65527451AC3F2AE000AA3BF /* thirdPress.png in Resources */ = {isa = PBXBuildFile; fileRef = E655273F1AC3F2AE000AA3BF /* thirdPress.png */; };
+		E65527461AC3F2AE000AA3BF /* thirdPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527401AC3F2AE000AA3BF /* thirdPress@2x.png */; };
 		E6C097641A66646500E19234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097631A66646500E19234 /* main.m */; };
 		E6C097671A66646500E19234 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097661A66646500E19234 /* AppDelegate.m */; };
 		E6C0976A1A66646500E19234 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097691A66646500E19234 /* FirstViewController.m */; };
@@ -59,6 +71,18 @@
 		E63A875D1AC3DC7A00BC0422 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
 		E63A875E1AC3DC7A00BC0422 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
 		E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		E655272F1AC3F1BC000AA3BF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Image/1.png; sourceTree = "<group>"; };
+		E65527301AC3F1BC000AA3BF /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1@2x.png"; path = "Image/1@2x.png"; sourceTree = "<group>"; };
+		E65527311AC3F1BC000AA3BF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Image/2.png; sourceTree = "<group>"; };
+		E65527321AC3F1BC000AA3BF /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2@2x.png"; path = "Image/2@2x.png"; sourceTree = "<group>"; };
+		E65527331AC3F1BC000AA3BF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = Image/3.png; sourceTree = "<group>"; };
+		E65527341AC3F1BC000AA3BF /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3@2x.png"; path = "Image/3@2x.png"; sourceTree = "<group>"; };
+		E655273B1AC3F2AE000AA3BF /* firstPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firstPress.png; path = Image/firstPress.png; sourceTree = "<group>"; };
+		E655273C1AC3F2AE000AA3BF /* firstPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "firstPress@2x.png"; path = "Image/firstPress@2x.png"; sourceTree = "<group>"; };
+		E655273D1AC3F2AE000AA3BF /* secondPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secondPress.png; path = Image/secondPress.png; sourceTree = "<group>"; };
+		E655273E1AC3F2AE000AA3BF /* secondPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "secondPress@2x.png"; path = "Image/secondPress@2x.png"; sourceTree = "<group>"; };
+		E655273F1AC3F2AE000AA3BF /* thirdPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thirdPress.png; path = Image/thirdPress.png; sourceTree = "<group>"; };
+		E65527401AC3F2AE000AA3BF /* thirdPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thirdPress@2x.png"; path = "Image/thirdPress@2x.png"; sourceTree = "<group>"; };
 		E6C0975E1A66646500E19234 /* HappyDel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyDel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C097621A66646500E19234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C097631A66646500E19234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -159,6 +183,25 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		E655272E1AC3F189000AA3BF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E655273B1AC3F2AE000AA3BF /* firstPress.png */,
+				E655273C1AC3F2AE000AA3BF /* firstPress@2x.png */,
+				E655273D1AC3F2AE000AA3BF /* secondPress.png */,
+				E655273E1AC3F2AE000AA3BF /* secondPress@2x.png */,
+				E655273F1AC3F2AE000AA3BF /* thirdPress.png */,
+				E65527401AC3F2AE000AA3BF /* thirdPress@2x.png */,
+				E655272F1AC3F1BC000AA3BF /* 1.png */,
+				E65527301AC3F1BC000AA3BF /* 1@2x.png */,
+				E65527311AC3F1BC000AA3BF /* 2.png */,
+				E65527321AC3F1BC000AA3BF /* 2@2x.png */,
+				E65527331AC3F1BC000AA3BF /* 3.png */,
+				E65527341AC3F1BC000AA3BF /* 3@2x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		E6C097551A66646500E19234 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +275,7 @@
 		E6C097951A6758D400E19234 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				E655272E1AC3F189000AA3BF /* Image */,
 				E63A875C1AC3D66B00BC0422 /* Cell */,
 				E6C097681A66646500E19234 /* FirstViewController.h */,
 				E6C097691A66646500E19234 /* FirstViewController.m */,
@@ -353,13 +397,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65527371AC3F1BC000AA3BF /* 2.png in Resources */,
+				E65527351AC3F1BC000AA3BF /* 1.png in Resources */,
 				E6C097BD1A67677000E19234 /* AddViewController.xib in Resources */,
+				E65527421AC3F2AE000AA3BF /* firstPress@2x.png in Resources */,
+				E65527381AC3F1BC000AA3BF /* 2@2x.png in Resources */,
+				E65527361AC3F1BC000AA3BF /* 1@2x.png in Resources */,
+				E65527451AC3F2AE000AA3BF /* thirdPress.png in Resources */,
+				E65527441AC3F2AE000AA3BF /* secondPress@2x.png in Resources */,
+				E65527431AC3F2AE000AA3BF /* secondPress.png in Resources */,
+				E65527411AC3F2AE000AA3BF /* firstPress.png in Resources */,
 				E6C097701A66646500E19234 /* Main.storyboard in Resources */,
 				E6C097D01A68A85400E19234 /* UpdateViewController.xib in Resources */,
 				E6C097751A66646500E19234 /* LaunchScreen.xib in Resources */,
+				E65527391AC3F1BC000AA3BF /* 3.png in Resources */,
 				E6C097981A67590100E19234 /* score.sqlite in Resources */,
 				E6C097721A66646500E19234 /* Images.xcassets in Resources */,
 				E6C097C81A67ABD900E19234 /* AddFriendViewController.xib in Resources */,
+				E655273A1AC3F1BC000AA3BF /* 3@2x.png in Resources */,
+				E65527461AC3F2AE000AA3BF /* thirdPress@2x.png in Resources */,
 				E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

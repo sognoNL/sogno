@@ -13,6 +13,7 @@
 #import "UpdateViewController.h"
 @interface SecondViewController ()
 @property (nonatomic,strong) NSMutableArray *recordAry;
+@property (strong, nonatomic) IBOutlet UITabBarItem *secondItem;
 @end
 
 @implementation SecondViewController
@@ -21,6 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.secondItem setFinishedSelectedImage:[UIImage imageNamed:@"secondPress.png"]
+                 withFinishedUnselectedImage:[UIImage imageNamed:@""]];
     self.recordAry = [[NSMutableArray alloc] init];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;

@@ -16,6 +16,7 @@
 @interface FirstViewController ()
 @property (nonatomic,strong) NSMutableArray *recordAry;
 @property (strong, nonatomic) IBOutlet UILabel *recodrCountLabel;
+@property (strong, nonatomic) IBOutlet UITabBarItem *firstItem;
 
 @end
 
@@ -24,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.firstItem setFinishedSelectedImage:[UIImage imageNamed:@"firstPress.png"]
+                 withFinishedUnselectedImage:[UIImage imageNamed:@""]];
     self.recordAry = [[NSMutableArray alloc] init];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
