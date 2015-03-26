@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A5A09AF77655578DEC1F55AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A956E4502B4D17E266A6580 /* libPods.a */; };
+		E63A87581AC3D62400BC0422 /* YXBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A87571AC3D62400BC0422 /* YXBaseCell.m */; };
+		E63A875B1AC3D66800BC0422 /* AvatarImg.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875A1AC3D66800BC0422 /* AvatarImg.m */; };
+		E63A87601AC3DC7A00BC0422 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875E1AC3DC7A00BC0422 /* FriendCell.m */; };
+		E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */; };
 		E6C097641A66646500E19234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097631A66646500E19234 /* main.m */; };
 		E6C097671A66646500E19234 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097661A66646500E19234 /* AppDelegate.m */; };
 		E6C0976A1A66646500E19234 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097691A66646500E19234 /* FirstViewController.m */; };
@@ -48,6 +52,13 @@
 		8A956E4502B4D17E266A6580 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE883B979BD67D35CF59521C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C4F29579B496FB579FF1927B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E63A87561AC3D62400BC0422 /* YXBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXBaseCell.h; sourceTree = "<group>"; };
+		E63A87571AC3D62400BC0422 /* YXBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXBaseCell.m; sourceTree = "<group>"; };
+		E63A87591AC3D66800BC0422 /* AvatarImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarImg.h; sourceTree = "<group>"; };
+		E63A875A1AC3D66800BC0422 /* AvatarImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarImg.m; sourceTree = "<group>"; };
+		E63A875D1AC3DC7A00BC0422 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		E63A875E1AC3DC7A00BC0422 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		E6C0975E1A66646500E19234 /* HappyDel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyDel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C097621A66646500E19234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C097631A66646500E19234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,6 +141,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E63A875C1AC3D66B00BC0422 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E6C0978F1A666C1500E19234 /* DetailCell.h */,
+				E6C097901A666C1500E19234 /* DetailCell.m */,
+				E6C0DD521A81E6A300F601EF /* DetailCell1.h */,
+				E6C0DD531A81E6A300F601EF /* DetailCell1.m */,
+				E63A87591AC3D66800BC0422 /* AvatarImg.h */,
+				E63A875A1AC3D66800BC0422 /* AvatarImg.m */,
+				E63A87561AC3D62400BC0422 /* YXBaseCell.h */,
+				E63A87571AC3D62400BC0422 /* YXBaseCell.m */,
+				E63A875D1AC3DC7A00BC0422 /* FriendCell.h */,
+				E63A875E1AC3DC7A00BC0422 /* FriendCell.m */,
+				E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		E6C097551A66646500E19234 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +232,7 @@
 		E6C097951A6758D400E19234 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				E63A875C1AC3D66B00BC0422 /* Cell */,
 				E6C097681A66646500E19234 /* FirstViewController.h */,
 				E6C097691A66646500E19234 /* FirstViewController.m */,
 				E6C0976B1A66646500E19234 /* SecondViewController.h */,
@@ -210,10 +240,6 @@
 				E6C097BE1A67956000E19234 /* ThirdViewController.h */,
 				E6C097BF1A67956000E19234 /* ThirdViewController.m */,
 				E6C0976E1A66646500E19234 /* Main.storyboard */,
-				E6C0978F1A666C1500E19234 /* DetailCell.h */,
-				E6C097901A666C1500E19234 /* DetailCell.m */,
-				E6C0DD521A81E6A300F601EF /* DetailCell1.h */,
-				E6C0DD531A81E6A300F601EF /* DetailCell1.m */,
 				E6C097B91A67677000E19234 /* AddViewController.h */,
 				E6C097BA1A67677000E19234 /* AddViewController.m */,
 				E6C097BB1A67677000E19234 /* AddViewController.xib */,
@@ -334,6 +360,7 @@
 				E6C097981A67590100E19234 /* score.sqlite in Resources */,
 				E6C097721A66646500E19234 /* Images.xcassets in Resources */,
 				E6C097C81A67ABD900E19234 /* AddFriendViewController.xib in Resources */,
+				E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,16 +414,19 @@
 				E6C0978E1A66692300E19234 /* HappyDetail.m in Sources */,
 				E6C097C31A67A59A00E19234 /* FriendScore.m in Sources */,
 				E6C0976D1A66646500E19234 /* SecondViewController.m in Sources */,
+				E63A87581AC3D62400BC0422 /* YXBaseCell.m in Sources */,
 				E6C097911A666C1500E19234 /* DetailCell.m in Sources */,
 				E6C097CB1A68A52300E19234 /* FourStar.m in Sources */,
 				E6C097C71A67ABD900E19234 /* AddFriendViewController.m in Sources */,
 				E6C097C01A67956000E19234 /* ThirdViewController.m in Sources */,
 				E6C097671A66646500E19234 /* AppDelegate.m in Sources */,
+				E63A87601AC3DC7A00BC0422 /* FriendCell.m in Sources */,
 				E6C0DD551A81E6A300F601EF /* DetailCell1.m in Sources */,
 				E6C097CF1A68A85400E19234 /* UpdateViewController.m in Sources */,
 				E6C0976A1A66646500E19234 /* FirstViewController.m in Sources */,
 				E6C51FCF1A8EF613001B2148 /* HelpViewController.m in Sources */,
 				E6C097641A66646500E19234 /* main.m in Sources */,
+				E63A875B1AC3D66800BC0422 /* AvatarImg.m in Sources */,
 				E6C097BC1A67677000E19234 /* AddViewController.m in Sources */,
 				E6C097AB1A67594F00E19234 /* HappyDAO.m in Sources */,
 			);

@@ -11,6 +11,7 @@
 #import "HappyDAO.h"
 #import "Constants.h"
 #import "AddFriendViewController.h"
+#import "FriendCell.h"
 
 @interface ThirdViewController ()
 @property (nonatomic,strong) NSMutableArray *recordAry;
@@ -54,18 +55,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailCell *cell = (DetailCell *)[tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
-
-    if(cell== nil)
-    {
-        cell = [[DetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
-    }
+    FriendCell *cell = (FriendCell *)[YXBaseCell setupCell:tableView withCellID:@"FriendCellID"];
+//    DetailCell *cell = (DetailCell *)[tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+//
+//    if(cell== nil)
+//    {
+//        cell = [[DetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
+//    }
 
     FriendScore *fs = self.recordAry[indexPath.row];
-    cell.recordLabel.text = fs.Name;
-    cell.recordLabel.font = [UIFont boldSystemFontOfSize:16];
-    cell.myScoreLabel.text = [NSString stringWithFormat:@"    %ld_%ld",(long)fs.MaxMark,(long)fs.TotalScore];
-    cell.bestScoreLabel.text = [NSString stringWithFormat:@"%f",(float)fs.TotalScore/(float)(fs.MaxMark-1)];
+    [cell setCellData:fs];
     return cell;
 }
 

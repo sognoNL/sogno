@@ -7,6 +7,8 @@
 //
 
 #import "DetailCell1.h"
+#import "AvatarImg.h"
+#define UIColorWithHex(c,a)       [UIColor colorWithRed:((c>>16)&0xFF)/255.0f green:((c>>8)&0xFF)/255.0f blue:(c&0xFF)/255.0f alpha:a]
 
 @interface DetailCell1 ()
 @end
@@ -18,11 +20,11 @@
     {
         self.backgroundColor = [UIColor clearColor];
         
-        _recordLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 70, 35)];
-        _recordLabel.backgroundColor = [UIColor clearColor];
-        _recordLabel.textAlignment = NSTextAlignmentCenter;
-        _recordLabel.font = [UIFont systemFontOfSize:20];
-        _recordLabel.textColor = [UIColor blackColor];
+        _recordImage = [[UIImageView alloc] initWithFrame:CGRectMake(13, 2, 30, 30)];
+//        _recordImage.backgroundColor = [UIColor clearColor];
+//        _recordImage.textAlignment = NSTextAlignmentCenter;
+//        _recordImage.font = [UIFont systemFontOfSize:20];
+//        _recordImage.textColor = [UIColor blackColor];
         
         _myScoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(75, 0, 120, 35)];
         _myScoreLabel.backgroundColor = [UIColor clearColor];
@@ -37,8 +39,8 @@
         _threeScoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(320-60, 0, 60, 35)];
         _threeScoreLabel.backgroundColor = [UIColor clearColor];
         _threeScoreLabel.font = [UIFont systemFontOfSize:12];
-        _threeScoreLabel.textColor = [UIColor lightGrayColor];
-        [self.contentView addSubview:_recordLabel];
+        _threeScoreLabel.textColor = UIColorWithHex(0x1FBFA8,0.7);
+        [self.contentView addSubview:_recordImage];
         [self.contentView addSubview:_myScoreLabel];
         [self.contentView addSubview:_bestScoreLabel];
         [self.contentView addSubview:_threeScoreLabel];
@@ -53,25 +55,15 @@
     {
         self.backgroundView.backgroundColor = [UIColor lightGrayColor];
     }
-    self.recordLabel.text = [NSString stringWithFormat:@"%d",detail.recordId];
+    self.recordImage.image = [AvatarImg renderImageWithColor:UIColorWithHex(0x1FBFA8,1.0f)
+                                                    title:[NSString stringWithFormat:@"%d",detail.recordId]
+                                                   inSize:self.recordImage.frame.size];
     self.myScoreLabel.text = [NSString stringWithFormat:@"%d/%@",detail.curRank,detail.curScore];
     self.bestScoreLabel.text = [NSString stringWithFormat:@"%d/%@",detail.bestRank,detail.bestScore];
     self.threeScoreLabel.text = detail.threeStar;
-//    FourStar *fs = [gHappyDAO getFourStarByRecoard:[NSString stringWithFormat:@"%d",detail.recordId]];
-//    if (fs)
-//    {
-//        self.recordLabel.textColor = [UIColor redColor];
-//        self.recordLabel.text = [NSString stringWithFormat:@"%d/%d",detail.recordId,fs.score];
-//        self.recordLabel.font = [UIFont systemFontOfSize:12];
-//    }
-//    else
-//    {
-        self.recordLabel.textColor = [UIColor blackColor];
-        self.recordLabel.font = [UIFont systemFontOfSize:20];
-//    }
     if (detail.isCompleted)
     {
-        self.backgroundColor = [UIColor grayColor];
+        self.backgroundColor = UIColorWithHex(0x1FBFA8,0.2);
     }
     else
     {

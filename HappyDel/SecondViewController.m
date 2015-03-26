@@ -52,17 +52,7 @@
         cell = [[DetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
     }
     FourStar *fs = self.recordAry[indexPath.row];
-    cell.recordLabel.text = [NSString stringWithFormat:@"   %d",fs.recordId];
-    cell.myScoreLabel.text = [NSString stringWithFormat:@"    %d",fs.score];
-    cell.bestScoreLabel.text = [NSString stringWithFormat:@"    %d",fs.myScore];
-    if (fs.isCompleted)
-    {
-        cell.backgroundColor = [UIColor grayColor];
-    }
-    else
-    {
-        cell.backgroundColor = [UIColor clearColor];
-    }
+    [cell setupFourStarCell:fs];
     return cell;
 }
 
