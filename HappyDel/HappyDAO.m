@@ -8,7 +8,8 @@
 
 #import "HappyDAO.h"
 #import "FMDatabase.h"
-#define kDBFile     @"score.sqlite"
+
+static const NSString *kDBFile = @"score.sqlite";
 
 @interface HappyDAO()
 

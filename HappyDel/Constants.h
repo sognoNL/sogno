@@ -9,3 +9,4 @@
 @class HappyDAO;
 
 #define gHappyDAO             ([HappyDAO sharedDAO])
+#define UIColorWithHex(c,a)       [UIColor colorWithRed:((c>>16)&0xFF)/255.0f green:((c>>8)&0xFF)/255.0f blue:(c&0xFF)/255.0f alpha:a]
