@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		339394E51B58B091004BE45D /* AvatarImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394DB1B58B091004BE45D /* AvatarImg.m */; };
+		339394E61B58B091004BE45D /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394DD1B58B091004BE45D /* DetailCell.m */; };
+		339394E71B58B091004BE45D /* DetailCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394DF1B58B091004BE45D /* DetailCell1.m */; };
+		339394E81B58B091004BE45D /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394E11B58B091004BE45D /* FriendCell.m */; };
+		339394E91B58B091004BE45D /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 339394E21B58B091004BE45D /* FriendCell.xib */; };
+		339394EA1B58B091004BE45D /* YXBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394E41B58B091004BE45D /* YXBaseCell.m */; };
+		339394F41B58B0F4004BE45D /* FourStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394EC1B58B0F4004BE45D /* FourStar.m */; };
+		339394F51B58B0F4004BE45D /* FriendScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394EE1B58B0F4004BE45D /* FriendScore.m */; };
+		339394F61B58B0F4004BE45D /* HappyDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394F01B58B0F4004BE45D /* HappyDAO.m */; };
+		339394F71B58B0F4004BE45D /* HappyDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 339394F21B58B0F4004BE45D /* HappyDetail.m */; };
+		339394F81B58B0F4004BE45D /* score.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 339394F31B58B0F4004BE45D /* score.sqlite */; };
 		A5A09AF77655578DEC1F55AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A956E4502B4D17E266A6580 /* libPods.a */; };
-		E63A87581AC3D62400BC0422 /* YXBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A87571AC3D62400BC0422 /* YXBaseCell.m */; };
-		E63A875B1AC3D66800BC0422 /* AvatarImg.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875A1AC3D66800BC0422 /* AvatarImg.m */; };
-		E63A87601AC3DC7A00BC0422 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63A875E1AC3DC7A00BC0422 /* FriendCell.m */; };
-		E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */; };
 		E65527351AC3F1BC000AA3BF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E655272F1AC3F1BC000AA3BF /* 1.png */; };
 		E65527361AC3F1BC000AA3BF /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527301AC3F1BC000AA3BF /* 1@2x.png */; };
 		E65527371AC3F1BC000AA3BF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E65527311AC3F1BC000AA3BF /* 2.png */; };
@@ -32,21 +39,14 @@
 		E6C097721A66646500E19234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C097711A66646500E19234 /* Images.xcassets */; };
 		E6C097751A66646500E19234 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C097731A66646500E19234 /* LaunchScreen.xib */; };
 		E6C097811A66646500E19234 /* HappyDelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097801A66646500E19234 /* HappyDelTests.m */; };
-		E6C0978E1A66692300E19234 /* HappyDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C0978D1A66692300E19234 /* HappyDetail.m */; };
-		E6C097911A666C1500E19234 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097901A666C1500E19234 /* DetailCell.m */; };
 		E6C097931A67555F00E19234 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C097921A67555F00E19234 /* libsqlite3.dylib */; };
-		E6C097981A67590100E19234 /* score.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E6C097971A67590100E19234 /* score.sqlite */; };
-		E6C097AB1A67594F00E19234 /* HappyDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097AA1A67594F00E19234 /* HappyDAO.m */; };
 		E6C097BC1A67677000E19234 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097BA1A67677000E19234 /* AddViewController.m */; };
 		E6C097BD1A67677000E19234 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C097BB1A67677000E19234 /* AddViewController.xib */; };
 		E6C097C01A67956000E19234 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097BF1A67956000E19234 /* ThirdViewController.m */; };
-		E6C097C31A67A59A00E19234 /* FriendScore.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097C21A67A59A00E19234 /* FriendScore.m */; };
 		E6C097C71A67ABD900E19234 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097C51A67ABD900E19234 /* AddFriendViewController.m */; };
 		E6C097C81A67ABD900E19234 /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C097C61A67ABD900E19234 /* AddFriendViewController.xib */; };
-		E6C097CB1A68A52300E19234 /* FourStar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097CA1A68A52300E19234 /* FourStar.m */; };
 		E6C097CF1A68A85400E19234 /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C097CD1A68A85400E19234 /* UpdateViewController.m */; };
 		E6C097D01A68A85400E19234 /* UpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C097CE1A68A85400E19234 /* UpdateViewController.xib */; };
-		E6C0DD551A81E6A300F601EF /* DetailCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C0DD531A81E6A300F601EF /* DetailCell1.m */; };
 		E6C51FCF1A8EF613001B2148 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C51FCE1A8EF613001B2148 /* HelpViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,16 +61,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339394DA1B58B091004BE45D /* AvatarImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvatarImg.h; path = Cell/AvatarImg.h; sourceTree = "<group>"; };
+		339394DB1B58B091004BE45D /* AvatarImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvatarImg.m; path = Cell/AvatarImg.m; sourceTree = "<group>"; };
+		339394DC1B58B091004BE45D /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCell.h; path = Cell/DetailCell.h; sourceTree = "<group>"; };
+		339394DD1B58B091004BE45D /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCell.m; path = Cell/DetailCell.m; sourceTree = "<group>"; };
+		339394DE1B58B091004BE45D /* DetailCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCell1.h; path = Cell/DetailCell1.h; sourceTree = "<group>"; };
+		339394DF1B58B091004BE45D /* DetailCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCell1.m; path = Cell/DetailCell1.m; sourceTree = "<group>"; };
+		339394E01B58B091004BE45D /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendCell.h; path = Cell/FriendCell.h; sourceTree = "<group>"; };
+		339394E11B58B091004BE45D /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendCell.m; path = Cell/FriendCell.m; sourceTree = "<group>"; };
+		339394E21B58B091004BE45D /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendCell.xib; path = Cell/FriendCell.xib; sourceTree = "<group>"; };
+		339394E31B58B091004BE45D /* YXBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXBaseCell.h; path = Cell/YXBaseCell.h; sourceTree = "<group>"; };
+		339394E41B58B091004BE45D /* YXBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXBaseCell.m; path = Cell/YXBaseCell.m; sourceTree = "<group>"; };
+		339394EB1B58B0F4004BE45D /* FourStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourStar.h; path = db/FourStar.h; sourceTree = "<group>"; };
+		339394EC1B58B0F4004BE45D /* FourStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourStar.m; path = db/FourStar.m; sourceTree = "<group>"; };
+		339394ED1B58B0F4004BE45D /* FriendScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendScore.h; path = db/FriendScore.h; sourceTree = "<group>"; };
+		339394EE1B58B0F4004BE45D /* FriendScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendScore.m; path = db/FriendScore.m; sourceTree = "<group>"; };
+		339394EF1B58B0F4004BE45D /* HappyDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HappyDAO.h; path = db/HappyDAO.h; sourceTree = "<group>"; };
+		339394F01B58B0F4004BE45D /* HappyDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HappyDAO.m; path = db/HappyDAO.m; sourceTree = "<group>"; };
+		339394F11B58B0F4004BE45D /* HappyDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HappyDetail.h; path = db/HappyDetail.h; sourceTree = "<group>"; };
+		339394F21B58B0F4004BE45D /* HappyDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HappyDetail.m; path = db/HappyDetail.m; sourceTree = "<group>"; };
+		339394F31B58B0F4004BE45D /* score.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = score.sqlite; path = db/score.sqlite; sourceTree = "<group>"; };
 		8A956E4502B4D17E266A6580 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE883B979BD67D35CF59521C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C4F29579B496FB579FF1927B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E63A87561AC3D62400BC0422 /* YXBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXBaseCell.h; sourceTree = "<group>"; };
-		E63A87571AC3D62400BC0422 /* YXBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXBaseCell.m; sourceTree = "<group>"; };
-		E63A87591AC3D66800BC0422 /* AvatarImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarImg.h; sourceTree = "<group>"; };
-		E63A875A1AC3D66800BC0422 /* AvatarImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarImg.m; sourceTree = "<group>"; };
-		E63A875D1AC3DC7A00BC0422 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
-		E63A875E1AC3DC7A00BC0422 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
-		E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		E655272F1AC3F1BC000AA3BF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Image/1.png; sourceTree = "<group>"; };
 		E65527301AC3F1BC000AA3BF /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1@2x.png"; path = "Image/1@2x.png"; sourceTree = "<group>"; };
 		E65527311AC3F1BC000AA3BF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Image/2.png; sourceTree = "<group>"; };
@@ -98,32 +111,19 @@
 		E6C0977A1A66646500E19234 /* HappyDelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyDelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0977F1A66646500E19234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C097801A66646500E19234 /* HappyDelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyDelTests.m; sourceTree = "<group>"; };
-		E6C0978C1A66692300E19234 /* HappyDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyDetail.h; sourceTree = "<group>"; };
-		E6C0978D1A66692300E19234 /* HappyDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappyDetail.m; sourceTree = "<group>"; };
-		E6C0978F1A666C1500E19234 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
-		E6C097901A666C1500E19234 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
 		E6C097921A67555F00E19234 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		E6C097971A67590100E19234 /* score.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = score.sqlite; sourceTree = "<group>"; };
-		E6C097A91A67594F00E19234 /* HappyDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyDAO.h; sourceTree = "<group>"; };
-		E6C097AA1A67594F00E19234 /* HappyDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappyDAO.m; sourceTree = "<group>"; };
 		E6C097AC1A675D7B00E19234 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E6C097B91A67677000E19234 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		E6C097BA1A67677000E19234 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		E6C097BB1A67677000E19234 /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
 		E6C097BE1A67956000E19234 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		E6C097BF1A67956000E19234 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		E6C097C11A67A59A00E19234 /* FriendScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendScore.h; sourceTree = "<group>"; };
-		E6C097C21A67A59A00E19234 /* FriendScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendScore.m; sourceTree = "<group>"; };
 		E6C097C41A67ABD900E19234 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
 		E6C097C51A67ABD900E19234 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
 		E6C097C61A67ABD900E19234 /* AddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
-		E6C097C91A68A52300E19234 /* FourStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourStar.h; sourceTree = "<group>"; };
-		E6C097CA1A68A52300E19234 /* FourStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourStar.m; sourceTree = "<group>"; };
 		E6C097CC1A68A85400E19234 /* UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateViewController.h; sourceTree = "<group>"; };
 		E6C097CD1A68A85400E19234 /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
 		E6C097CE1A68A85400E19234 /* UpdateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateViewController.xib; sourceTree = "<group>"; };
-		E6C0DD521A81E6A300F601EF /* DetailCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell1.h; sourceTree = "<group>"; };
-		E6C0DD531A81E6A300F601EF /* DetailCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell1.m; sourceTree = "<group>"; };
 		E6C51FCD1A8EF613001B2148 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		E6C51FCE1A8EF613001B2148 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,17 +168,17 @@
 		E63A875C1AC3D66B00BC0422 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E6C0978F1A666C1500E19234 /* DetailCell.h */,
-				E6C097901A666C1500E19234 /* DetailCell.m */,
-				E6C0DD521A81E6A300F601EF /* DetailCell1.h */,
-				E6C0DD531A81E6A300F601EF /* DetailCell1.m */,
-				E63A87591AC3D66800BC0422 /* AvatarImg.h */,
-				E63A875A1AC3D66800BC0422 /* AvatarImg.m */,
-				E63A87561AC3D62400BC0422 /* YXBaseCell.h */,
-				E63A87571AC3D62400BC0422 /* YXBaseCell.m */,
-				E63A875D1AC3DC7A00BC0422 /* FriendCell.h */,
-				E63A875E1AC3DC7A00BC0422 /* FriendCell.m */,
-				E63A875F1AC3DC7A00BC0422 /* FriendCell.xib */,
+				339394DA1B58B091004BE45D /* AvatarImg.h */,
+				339394DB1B58B091004BE45D /* AvatarImg.m */,
+				339394DC1B58B091004BE45D /* DetailCell.h */,
+				339394DD1B58B091004BE45D /* DetailCell.m */,
+				339394DE1B58B091004BE45D /* DetailCell1.h */,
+				339394DF1B58B091004BE45D /* DetailCell1.m */,
+				339394E01B58B091004BE45D /* FriendCell.h */,
+				339394E11B58B091004BE45D /* FriendCell.m */,
+				339394E21B58B091004BE45D /* FriendCell.xib */,
+				339394E31B58B091004BE45D /* YXBaseCell.h */,
+				339394E41B58B091004BE45D /* YXBaseCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -302,15 +302,15 @@
 		E6C097961A6758EF00E19234 /* db */ = {
 			isa = PBXGroup;
 			children = (
-				E6C097971A67590100E19234 /* score.sqlite */,
-				E6C0978C1A66692300E19234 /* HappyDetail.h */,
-				E6C0978D1A66692300E19234 /* HappyDetail.m */,
-				E6C097A91A67594F00E19234 /* HappyDAO.h */,
-				E6C097AA1A67594F00E19234 /* HappyDAO.m */,
-				E6C097C11A67A59A00E19234 /* FriendScore.h */,
-				E6C097C21A67A59A00E19234 /* FriendScore.m */,
-				E6C097C91A68A52300E19234 /* FourStar.h */,
-				E6C097CA1A68A52300E19234 /* FourStar.m */,
+				339394EB1B58B0F4004BE45D /* FourStar.h */,
+				339394EC1B58B0F4004BE45D /* FourStar.m */,
+				339394ED1B58B0F4004BE45D /* FriendScore.h */,
+				339394EE1B58B0F4004BE45D /* FriendScore.m */,
+				339394EF1B58B0F4004BE45D /* HappyDAO.h */,
+				339394F01B58B0F4004BE45D /* HappyDAO.m */,
+				339394F11B58B0F4004BE45D /* HappyDetail.h */,
+				339394F21B58B0F4004BE45D /* HappyDetail.m */,
+				339394F31B58B0F4004BE45D /* score.sqlite */,
 			);
 			name = db;
 			sourceTree = "<group>";
@@ -405,18 +405,18 @@
 				E65527361AC3F1BC000AA3BF /* 1@2x.png in Resources */,
 				E65527451AC3F2AE000AA3BF /* thirdPress.png in Resources */,
 				E65527441AC3F2AE000AA3BF /* secondPress@2x.png in Resources */,
+				339394F81B58B0F4004BE45D /* score.sqlite in Resources */,
 				E65527431AC3F2AE000AA3BF /* secondPress.png in Resources */,
 				E65527411AC3F2AE000AA3BF /* firstPress.png in Resources */,
 				E6C097701A66646500E19234 /* Main.storyboard in Resources */,
 				E6C097D01A68A85400E19234 /* UpdateViewController.xib in Resources */,
 				E6C097751A66646500E19234 /* LaunchScreen.xib in Resources */,
 				E65527391AC3F1BC000AA3BF /* 3.png in Resources */,
-				E6C097981A67590100E19234 /* score.sqlite in Resources */,
+				339394E91B58B091004BE45D /* FriendCell.xib in Resources */,
 				E6C097721A66646500E19234 /* Images.xcassets in Resources */,
 				E6C097C81A67ABD900E19234 /* AddFriendViewController.xib in Resources */,
 				E655273A1AC3F1BC000AA3BF /* 3@2x.png in Resources */,
 				E65527461AC3F2AE000AA3BF /* thirdPress@2x.png in Resources */,
-				E63A87611AC3DC7A00BC0422 /* FriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,24 +467,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C0978E1A66692300E19234 /* HappyDetail.m in Sources */,
-				E6C097C31A67A59A00E19234 /* FriendScore.m in Sources */,
+				339394E51B58B091004BE45D /* AvatarImg.m in Sources */,
+				339394F71B58B0F4004BE45D /* HappyDetail.m in Sources */,
 				E6C0976D1A66646500E19234 /* SecondViewController.m in Sources */,
-				E63A87581AC3D62400BC0422 /* YXBaseCell.m in Sources */,
-				E6C097911A666C1500E19234 /* DetailCell.m in Sources */,
-				E6C097CB1A68A52300E19234 /* FourStar.m in Sources */,
 				E6C097C71A67ABD900E19234 /* AddFriendViewController.m in Sources */,
 				E6C097C01A67956000E19234 /* ThirdViewController.m in Sources */,
 				E6C097671A66646500E19234 /* AppDelegate.m in Sources */,
-				E63A87601AC3DC7A00BC0422 /* FriendCell.m in Sources */,
-				E6C0DD551A81E6A300F601EF /* DetailCell1.m in Sources */,
+				339394F41B58B0F4004BE45D /* FourStar.m in Sources */,
 				E6C097CF1A68A85400E19234 /* UpdateViewController.m in Sources */,
 				E6C0976A1A66646500E19234 /* FirstViewController.m in Sources */,
 				E6C51FCF1A8EF613001B2148 /* HelpViewController.m in Sources */,
+				339394E61B58B091004BE45D /* DetailCell.m in Sources */,
+				339394E71B58B091004BE45D /* DetailCell1.m in Sources */,
 				E6C097641A66646500E19234 /* main.m in Sources */,
-				E63A875B1AC3D66800BC0422 /* AvatarImg.m in Sources */,
+				339394E81B58B091004BE45D /* FriendCell.m in Sources */,
+				339394F51B58B0F4004BE45D /* FriendScore.m in Sources */,
 				E6C097BC1A67677000E19234 /* AddViewController.m in Sources */,
-				E6C097AB1A67594F00E19234 /* HappyDAO.m in Sources */,
+				339394EA1B58B091004BE45D /* YXBaseCell.m in Sources */,
+				339394F61B58B0F4004BE45D /* HappyDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
