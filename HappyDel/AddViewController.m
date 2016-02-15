@@ -11,7 +11,9 @@
 #import "HappyDAO.h"
 
 @interface AddViewController ()
-
+{
+    NSInteger recordid;
+}
 @property (strong, nonatomic) IBOutlet UITextField *idField;
 @property (strong, nonatomic) IBOutlet UITextField *myRankField;
 @property (strong, nonatomic) IBOutlet UITextField *myScoreField;
@@ -29,14 +31,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    recordid = 53;
     if (!self.happyDetail)
     {
         self.happyDetail = [[HappyDetail alloc] init];
     }
     else
     {
-        self.idField.text = [NSString stringWithFormat:@"%d",self.happyDetail.recordId];
-        self.myRankField.text = [NSString stringWithFormat:@"%d",self.happyDetail.curRank];
+        self.idField.text = [NSString stringWithFormat:@"%ld",(long)self.happyDetail.recordId];
+        self.myRankField.text = [NSString stringWithFormat:@"%ld",(long)self.happyDetail.curRank];
         self.myScoreField.text = self.happyDetail.curScore;
         self.bestScoreField.text = self.happyDetail.bestScore;
         self.threeStar.text = self.happyDetail.threeStar;
@@ -48,6 +51,7 @@
 - (IBAction)savePressed:(id)sender
 {
     [self.view endEditing:YES];
+//    recordid ++;
     self.happyDetail.recordId = self.idField.text.integerValue;
     self.happyDetail.curRank = self.myRankField.text.integerValue;
     self.happyDetail.curScore = [self _dealData:self.myScoreField.text];
