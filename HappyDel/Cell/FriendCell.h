@@ -12,9 +12,5 @@
 #import "FriendScore.h"
 
 @interface FriendCell : YXBaseCell
-//@property (strong, nonatomic) IBOutlet UIImageView *nameImgView;
-//@property (strong, nonatomic) IBOutlet UIImageView *guankaImgView;
-//@property (strong, nonatomic) IBOutlet UIImageView *scoreImgView;
-//@property (strong, nonatomic) IBOutlet UILabel *percentLabel;
 
 @end

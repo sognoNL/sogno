@@ -52,10 +52,10 @@
 {
     self.recordLabel.frame = CGRectZero;
     self.recordImage.image = [AvatarImg renderImageWithColor:UIColorWithHex(0x1FBFA8,1.0f)
-                                                       title:[NSString stringWithFormat:@"%d",detail.recordId]
+                                                       title:[NSString stringWithFormat:@"%ld",(long)detail.recordId]
                                                       inSize:self.recordImage.frame.size];
-    self.myScoreLabel.text = [NSString stringWithFormat:@"    %d",detail.score];
-    self.bestScoreLabel.text = [NSString stringWithFormat:@"    %d",detail.myScore];
+    self.myScoreLabel.text = [NSString stringWithFormat:@"    %ld",(long)detail.score];
+    self.bestScoreLabel.text = [NSString stringWithFormat:@"    %ld",(long)detail.myScore];
     if (detail.isCompleted)
     {
         self.backgroundColor = UIColorWithHex(0x1FBFA8,0.2);

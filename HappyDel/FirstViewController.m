@@ -44,7 +44,7 @@
         [weakself.tableview reloadData];
     }];
     
-    self.recodrCountLabel.text = [NSString stringWithFormat:@"%d",[gHappyDAO numberOfRecord]];
+    self.recodrCountLabel.text = [NSString stringWithFormat:@"%ld",(long)[gHappyDAO numberOfRecord]];
 }
 
 - (IBAction)addRecord:(id)sender

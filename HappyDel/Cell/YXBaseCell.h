@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "CellDefine.h"
 
 @interface YXBaseCell : UITableViewCell
 

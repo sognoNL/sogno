@@ -21,10 +21,6 @@
         self.backgroundColor = [UIColor clearColor];
         
         _recordImage = [[UIImageView alloc] initWithFrame:CGRectMake(13, 2, 30, 30)];
-//        _recordImage.backgroundColor = [UIColor clearColor];
-//        _recordImage.textAlignment = NSTextAlignmentCenter;
-//        _recordImage.font = [UIFont systemFontOfSize:20];
-//        _recordImage.textColor = [UIColor blackColor];
         
         _myScoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(75, 0, 120, 35)];
         _myScoreLabel.backgroundColor = [UIColor clearColor];
@@ -56,10 +52,10 @@
         self.backgroundView.backgroundColor = [UIColor lightGrayColor];
     }
     self.recordImage.image = [AvatarImg renderImageWithColor:UIColorWithHex(0x1FBFA8,1.0f)
-                                                    title:[NSString stringWithFormat:@"%d",detail.recordId]
+                                                    title:[NSString stringWithFormat:@"%ld",(long)detail.recordId]
                                                    inSize:self.recordImage.frame.size];
-    self.myScoreLabel.text = [NSString stringWithFormat:@"%d/%@",detail.curRank,detail.curScore];
-    self.bestScoreLabel.text = [NSString stringWithFormat:@"%d/%@",detail.bestRank,detail.bestScore];
+    self.myScoreLabel.text = [NSString stringWithFormat:@"%ld/%@",(long)detail.curRank,detail.curScore];
+    self.bestScoreLabel.text = [NSString stringWithFormat:@"%ld/%@",(long)detail.bestRank,detail.bestScore];
     self.threeScoreLabel.text = detail.threeStar;
     if (detail.isCompleted)
     {
