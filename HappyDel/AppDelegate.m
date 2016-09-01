@@ -8,19 +8,67 @@
 
 #import "AppDelegate.h"
 #import "HappyDAO.h"
+#import <objc/runtime.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
 
 @implementation AppDelegate
+
+#ifdef DEBUG
+FILE *fopen$UNIX2003(const char *filename, const char *mode) {
+    return fopen(filename, mode);
+}
+
+size_t fwrite$UNIX2003(const void *ptr, size_t size, size_t nitems, FILE *stream) {
+    return fwrite(ptr, size, nitems, stream);
+}
+#endif
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     [gHappyDAO initDatabase];
+    Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
+    NSObject* workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+    NSLog(@"apps: %@", [workspace performSelector:@selector(allApplications)]);
     return YES;
+}
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+////    NSLog(@"调用的应用程序的Bundle ID是: %@", sourceApplication);
+//    NSLog(@"URL scheme:%@", [url scheme]);
+//    NSLog(@"URL query: %@", [url query]);
+//    return YES;
+//}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if ([sourceApplication isEqualToString:@"com.b.yixin.FengNiao.dev"])
+    {
+        NSLog(@"调用的应用程序的Bundle ID是: %@", sourceApplication);
+        NSLog(@"URL scheme:%@", [url scheme]);
+        NSLog(@"URL query: %@", [url query]);
+        if ([[url query] isEqualToString:@"back"]) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"是否返回企业易信" delegate:self cancelButtonTitle:@"留下" otherButtonTitles:@"返回企业易信", nil];
+            [alert show];
+        }
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == alertView.cancelButtonIndex) {
+        
+    }else{
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"yixinwork://"]];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

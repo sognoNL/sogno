@@ -49,9 +49,10 @@
 
 - (IBAction)addRecord:(id)sender
 {
-    AddViewController *avc = [[AddViewController alloc] init];
-    avc.isAdd = YES;
-    [self presentViewController:avc animated:YES completion:nil];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"yixinwork://"]];
+//    AddViewController *avc = [[AddViewController alloc] init];
+//    avc.isAdd = YES;
+//    [self presentViewController:avc animated:YES completion:nil];
 }
 
 - (IBAction)allRecord:(id)sender {
